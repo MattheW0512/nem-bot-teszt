@@ -80,8 +80,10 @@ client.on('message', message => {
 
 client.on('message', message => {
 
-    if (message.content.includes(`${prefix}nick`)) {
-        message.member.setNickname(message.content.replace('>nick ', ''));
+    if (message.content === `teszt`) {
+
+        message.channel.send("Működök, Kutya!")
+
     }
 
 })
