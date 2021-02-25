@@ -143,5 +143,5 @@ client.on('message', message => {
 
 
 //DC BOT TOKEN
-bot_secret_token = "NzQ1OTgyNDA5MTY1NTA0NjAy.Xz5sQg.nEkLAKumQxNFjSMKTFYJ_JCKEvY";
-client.login(bot_secret_token);
+const token = process.env.token;
+client.login(token);
