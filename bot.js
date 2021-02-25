@@ -105,11 +105,6 @@ client.on('message', message => {
 
         if (message.member.voice) {
 
-            /*let server = client.guilds.cache.get('713447486471274568')
-
-            var role = server.roles.cache.find(role => role.name === "#");
-            message.member.roles.add(role)*/
-
             message.member.voice.setChannel('810297725286482001')
 
         } else {
@@ -124,10 +119,6 @@ client.on('message', message => {
 
         if (message.member.voice) {
 
-            /*let server = client.guilds.cache.get('713447486471274568')
-
-            var role = server.roles.cache.find(role => role.name === "#");
-            message.member.roles.add(role)*/
 
             message.member.voice.setChannel('811666520567840799')
 
