@@ -1,5 +1,4 @@
 //Minden, ami kell :)
-const ytdl = require('ytdl-core');
 const Discord = require('discord.js');
 const { EventEmitter } = require('events');
 const { setMaxListeners, disconnect } = require('process');
