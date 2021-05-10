@@ -91,20 +91,6 @@ client.on('message', message => {
     }
 })
 
-client.on('message', message => {
-    if (message.content === `${prefix}ready`) {
-
-        let channelID = '841262813572759603';
-
-        guild.voice.channel.id(channelID).overwritePermissions([
-            {
-                deny: ['CONNECT'],
-            }, 
-        ],'Indok');
-
-    }
-})
-
 //DC BOT TOKEN
 const token = process.env.token;
 client.login(token);
