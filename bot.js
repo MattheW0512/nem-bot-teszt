@@ -7,6 +7,7 @@ const {prefix} = require('./config.json');
 const xdrole = require('./xd.js');
 const guild = new Discord.Guild();
 const role = new Discord.Role();
+const guildChannel = new Discord.GuildChannel();
 
 //Alap cuccok
 function start() {
@@ -79,16 +80,6 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
-
-    if (message.content === `teszt`) {
-
-        message.channel.send("Működök, Kutya!")
-
-    }
-
-})
-
-client.on('message', message => {
     if (message.content === `${prefix}kocka`) {
 
         textChannelID = message.channel;
@@ -102,37 +93,18 @@ client.on('message', message => {
 })
 
 client.on('message', message => {
+    if (message.content === `${prefix}ready`) {
 
-    if (message.content === '54734735') {
+        let channelID = '841262813572759603';
 
-        if (message.member.voice) {
+        guild.voice.channel.id(channelID).overwritePermissions([
+            {
+                deny: ['CONNECT'],
+            }, 
+        ],'Indok');
 
-            message.member.voice.setChannel('810297725286482001')
-
-        } else {
-
-            message.channel.send('Bruh');
-
-        }
-    
     }
-
-    else if (message.content === 'n6503782') {
-
-        if (message.member.voice) {
-
-
-            message.member.voice.setChannel('811666520567840799')
-
-        } else {
-
-            message.channel.send('Bruh');
-
-        }
-    }
-
 })
-
 
 //DC BOT TOKEN
 const token = process.env.token;
