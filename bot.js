@@ -7,7 +7,6 @@ const {prefix} = require('./config.json');
 const xdrole = require('./xd.js');
 const guild = new Discord.Guild();
 const role = new Discord.Role();
-const guildChannel = new Discord.GuildChannel();
 
 //Alap cuccok
 function start() {
