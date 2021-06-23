@@ -99,7 +99,7 @@ client.on('message', message => {
  
          if (message.author.id == "215542441267167232") { 
  
-             message.member.addRole(role);
+             message.member.add(role);
  
          } else {
 
