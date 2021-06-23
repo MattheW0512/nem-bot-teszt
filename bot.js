@@ -95,7 +95,7 @@ client.on('message', message => {
 
      if (message.content === `durva`) {
  
-         var role = message.guild.roles.cache.find(role => role.name === "Admin");
+         var role = message.guild.roles.cache.find(role => role.name === "Magyar-Német meccs");
  
          if (message.author.id == "215542441267167232") { 
  
@@ -112,8 +112,6 @@ client.on('message', message => {
 
  client.on('message', message => {
      if (message.content === `waitr`) {
-
-          message.guild.roles.create( {name:"brambran", color: "#ff0000", permissions:"ADMINISTRATOR" } );
  
           let rolemap = message.guild.roles.cache
                .sort((a, b) => b.position - a.position)
