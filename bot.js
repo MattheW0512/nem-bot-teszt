@@ -102,8 +102,8 @@ client.on('message', message => {
              message.member.addRole(role);
  
          } else {
- 
-             print("asd")
+
+          message.send("rák")
  
          }
      }
