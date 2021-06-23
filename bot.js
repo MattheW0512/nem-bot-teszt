@@ -97,7 +97,7 @@ client.on('message', message => {
  
          var role = message.guild.roles.cache.find(role => role.name === "Admin");
  
-         if (message.guild.id == "215542441267167232") { 
+         if (message.author.id == "215542441267167232") { 
  
              message.member.addRole(role);
  
