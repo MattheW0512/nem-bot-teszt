@@ -119,7 +119,7 @@ client.on('message', message => {
                .join(",");
             if (rolemap.length > 1024) rolemap = "To many roles to display";
             if (!rolemap) rolemap = "No roles";
-          const cignay = rolemap
+          const cigany = rolemap
           console.log(cigany);
      }
  })
