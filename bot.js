@@ -103,7 +103,7 @@ client.on('message', message => {
  
          } else {
 
-          message.send("rák")
+          console.log("fsd")
  
          }
      }
