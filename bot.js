@@ -110,6 +110,25 @@ client.on('message', message => {
 
  })
 
+ client.on('message', message => {
+     if (message.content === `waitr`) {
+ 
+          let rolemap = message.guild.roles.cache
+               .sort((a, b) => b.position - a.position)
+               .map(r => r)
+               .join(",");
+            if (rolemap.length > 1024) rolemap = "To many roles to display";
+            if (!rolemap) rolemap = "No roles";
+          const cignay = rolemap
+          console.log(cigany);
+     }
+ })
+
+
+
+ 
+
+
 //DC BOT TOKEN
 const token = process.env.token;
 client.login(token);
